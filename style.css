@@ -1,0 +1,100 @@
+
+/* General Styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Container for the content */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header styles */
+h1 {
+  color: #5a5a5a;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* Styles for the upload button */
+.upload-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hide the file input using opacity */
+.upload-btn-wrapper input[type=file] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Styles for the results section */
+#results {
+  text-align: center;
+}
+
+#results p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#results img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}
+```
+
+This CSS will style the elements in your HTML to have a centered layout with a clean, modern aesthetic. The upload button is styled to look like a button, even though it's technically a file input. The results section will display the caption and image in a neat format.
+
+Remember to include this CSS in a `<style>` tag within the `<head>` section of your HTML document, or link it as an external stylesheet by saving the CSS code in a `.css` file and linking it using the `<link>` tag in the HTML `<head>` section. Here's how you would link an external stylesheet:
+
+```html
+<link rel="stylesheet" type="text/css" href="styles.css">
+```
+
+Replace `"styles.css"` with the path to your CSS file. This will apply the styles to your web app, giving it a polished look and feel.
